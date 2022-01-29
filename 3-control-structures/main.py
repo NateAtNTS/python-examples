@@ -49,3 +49,6 @@ print(squares)
 print("\nLooping over the tuple")
 for t in d.my_tuple:
     print(t)
+
+print("\nnames from csv")
+print(d.names)

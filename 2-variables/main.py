@@ -150,3 +150,8 @@ print(original_book_list)
 print("\nAnother way to access the last element in the list")
 print(original_book_list[-1])
 
+# now time for a tuple - a list that cannot change
+print("\nShowing off a tuple")
+my_tuple = (10, 20, 30, 40)
+print(my_tuple)
+print(my_tuple[1])

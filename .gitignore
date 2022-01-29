@@ -1,2 +1,5 @@
 # Ignore Jetbrains product project files
 .idea
+
+# ignore environment file
+.env
