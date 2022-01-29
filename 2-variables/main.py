@@ -54,3 +54,99 @@ print(my_age + my_wifes_age)
 print("\n\nRounding a number: ")
 big_decimal = 1.2230002030304005050404040
 print(big_decimal.__round__(3))
+
+# multiple assignment
+one, two, three = 1,2,3
+print("\nThe result of multiple assignment")
+print(one + two + three)
+
+# python doesn't have constants, but historically programmers have put constants in all caps.
+MY_CONSTANT = "This should never be changed"
+print("\nMy Constant")
+print(MY_CONSTANT)
+
+import this
+
+# lets do a list...I"m used to calling these arrays
+books = ['LOTR', 'Foundation', 'WingFeather Saga', "Chronicles of Narnia"]
+original_book_list = books.copy()
+
+print("\nMy book list")
+print(books)
+
+# in programming you start counting at 0 in many langauges. So that is why the third element in this list has an index of 2
+print("\nAccess the third element in the list")
+print(books[2])
+
+# change the value of one of the elements
+books[3] = "The " + books[3]
+
+# here is an alternate way to access an array element
+print(f"My children really liked \"{books[len(books)-1]}\" when I read it to them a few years ago.")
+
+# add a book to the list
+books.append("The Green Ember Series")
+print("\nThe book list now that I have added something to it")
+print(books)
+
+# insert a new element at a certain index
+books.insert(0, "The Mysterious Benedict Society")
+print("\nShow the book list with a new first element")
+print(books)
+
+# remove an element from the array. in this case I am removing "LOTR"
+del(books[1])
+print("\nThe book list with element two deleted")
+print(books)
+
+# the new element at index 1 now that I have deleted "LOTR" is "Foundation"
+print(books[1])
+
+# lets pop the last element on the book stack
+popped_book = books.pop()
+print("\npopped book")
+print(popped_book)
+
+print("\nbooks after pop")
+print(books)
+
+second_popped_book = books.pop(0)
+print("\nLet's look at my second popped book but this time with an index")
+print(second_popped_book)
+
+print("\nBooks after second pop at index")
+print(books)
+
+# now let's remove an array element by its value
+print("\nRemove by value result")
+books.remove("Foundation")
+print(books)
+
+# now let's sort!
+print("\nOriginal Book list is")
+print(original_book_list)
+
+print("\nNow let's sort it temporarily")
+print(sorted(original_book_list))
+
+print("\nNow let's sort it temporarily in reverse")
+print(sorted(original_book_list, reverse=True))
+
+print("\nNotice now the the list is back in its original order")
+print(original_book_list)
+
+print("\nNow let's reverse the list")
+original_book_list.reverse()
+print(original_book_list)
+
+print("\nNow let's sort it permanently")
+original_book_list.sort()
+print(original_book_list)
+print("\nReverse Sort")
+original_book_list.sort(reverse=True)
+print(original_book_list)
+
+# another way to access the last element in the list
+print("\nAnother way to access the last element in the list")
+print(original_book_list[-1])
+
