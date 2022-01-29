@@ -17,7 +17,7 @@ I reuse a data file throughout the tutorials to demonstrate various functionalit
 
 ## Other Files
 
-* `names.csv` I pull a list of names to use in the data module from this csv file
+* `names.csv` I put a list of names to use in the data module from this csv file
 
 ## Tutorial List
 
