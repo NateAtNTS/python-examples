@@ -42,7 +42,7 @@ print(sum(my_range) + sum(my_range_by_two))
 
 # showing off pythons comprehension
 print("\nshow off python's comprehension compact code")
-squares = [value**2 for value in range(1, 21)]
+squares = [value ** 2 for value in range(1, 21)]
 print(squares)
 
 # loop over a tuple
@@ -52,3 +52,32 @@ for t in d.my_tuple:
 
 print("\nnames from csv")
 print(d.names)
+
+boolean_test = True
+my_number = 10
+if my_number < 11 and boolean_test is True:
+    print("\nboolean test - both conditions ")
+
+print("\nChecking to see if LOTR is in my booklist")
+if 'LOTR' in d.books:
+    print("LOTR is in d.books")
+
+if 'book_not_in_list' not in d.books:
+    print("\n'book_not_in_list' is not it d.books")
+
+fancy = True
+funny = False
+if fancy is False:
+    print("\nfancy is false")
+elif funny is True:
+    print("\nfunny is true")
+else:
+    print("\nNothing was true")
+
+print("\nLet's do a while loop")
+while_index = 0
+while while_index < 4:
+    print(while_index)
+    while_index += 1
+
+
