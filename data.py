@@ -33,3 +33,4 @@ for row in names_csv:
             names.append(cell)
         cell_count = cell_count + 1
 
+dividing_line = "-----------------------------------------------------"
