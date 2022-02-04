@@ -25,4 +25,5 @@ I reuse a data file throughout the tutorials to demonstrate various functionalit
 2. Variables
 3. Control Structures
 4. User Input
+5. Functions
 
