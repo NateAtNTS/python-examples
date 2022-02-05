@@ -4,6 +4,7 @@ import csv
 
 # pip3 install python-dotenv
 from dotenv import load_dotenv
+
 load_dotenv()
 # print(os.getenv("MY_SAMPLE_VARIABLE"))
 
@@ -34,3 +35,28 @@ for row in names_csv:
         cell_count = cell_count + 1
 
 dividing_line = "-----------------------------------------------------"
+
+
+def load_csv(file_name):
+    file = open(str(BASE_PATH) + "/" + file_name, "r")
+    csv_results = csv.reader(file)
+    column_names = []
+    rows = []
+
+    csv_index = 0
+    for csv_row in csv_results:
+        if csv_index == 0:
+            column_names = csv_row
+        else:
+            row_result = {}
+            cell_index = 0
+            for cell_result in csv_row:
+                row_result[column_names[cell_index]] = cell_result
+                cell_index += 1
+            rows.append(row_result)
+        csv_index += 1
+
+    return {
+        "columns": column_names,
+        "rows": rows
+    }
